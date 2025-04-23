@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportParentViewModel", "SupportParentViewModel\SupportParentViewModel.csproj", "{D173DE69-CD7A-484E-A0BB-676DFCA06CC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D173DE69-CD7A-484E-A0BB-676DFCA06CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D173DE69-CD7A-484E-A0BB-676DFCA06CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D173DE69-CD7A-484E-A0BB-676DFCA06CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D173DE69-CD7A-484E-A0BB-676DFCA06CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2297905A-9845-4DD6-A775-41D195829D5F}
+	EndGlobalSection
+EndGlobal
