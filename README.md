@@ -36,8 +36,6 @@ protected override void OnParentViewModelChanged(object parentViewModel) {
 }
 ```
 
-This ensures bindings and logic depending on `ParentViewModel` are updated correctly when the parent context changes.
-
 ## Manual Implementation
 
 If your view model does not inherit from `ViewModelBase`, you can implement the `ISupportParentViewModel` interface manually.
