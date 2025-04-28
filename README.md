@@ -11,7 +11,7 @@ This example uses the [`ISupportParentViewModel`](https://docs.devexpress.com/WP
 
 ## Implementation Details
 
-Use the `ViewModelExtensions.ParentViewModel` attached property to associate a child view model with a parent view model. In XAML, specify the `ParentViewModel` property for the child view as follows so it can access services and data from the required parent view model:
+Use the `ViewModelExtensions.ParentViewModel` attached property to associate a child view model with a parent view model. In XAML, specify the `ParentViewModel` property for the child view as follows so it can access services and data from the parent view model:
 
 ```xaml
 <local:ChildView 
