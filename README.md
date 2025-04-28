@@ -18,7 +18,7 @@ Use the `ViewModelExtensions.ParentViewModel` attached property to associate a p
     dxmvvm:ViewModelExtensions.ParentViewModel="{Binding DataContext, ElementName=LayoutRoot}"/>
 ```
 
-> Note: The `ViewModelExtensions.ParentViewModel` attached property is set **after** the child view is initialized. It is not available in the view model constructor.
+> Note: The `ViewModelExtensions.ParentViewModel` attached property is set **after** the child view is initialized because the property is not available in a child view constructor.
 
 The [`ISupportParentViewModel`](https://docs.devexpress.com/WPF/17449/mvvm-framework/viewmodels/viewmodel-relationships-isupportparentviewmodel) interface allows a child view model to access MVVM services defined at the parent level:
 
