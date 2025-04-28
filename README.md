@@ -28,7 +28,7 @@ IMessageBoxService MessageBoxService {
 }
 ```
 
-In `ViewModelBase` descendants, override the `OnParentViewModelChanged` method to raise property change notifications for `ParentViewModel`:
+Override the `OnParentViewModelChanged` method in a `ViewModelBase` descendant only if your child view model implementation includes custom parent view model changes.
 
 ```cs
 protected override void OnParentViewModelChanged(object parentViewModel) {
