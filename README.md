@@ -7,7 +7,7 @@
 
 # WPF MVVM Framework - Utilize the ISupportParentViewModel Interface
 
-This example uses the [`ISupportParentViewModel`](https://docs.devexpress.com/WPF/17449/mvvm-framework/viewmodels/viewmodel-relationships-isupportparentviewmodel) interface that exposes a parent view model to its child view models. The interface is implemented automatically in all [`ViewModelBase`](https://docs.devexpress.com/WPF/17351/mvvm-framework/viewmodels/viewmodelbase) descendants.  
+This example uses the [`ISupportParentViewModel`](https://docs.devexpress.com/WPF/17449/mvvm-framework/viewmodels/viewmodel-relationships-isupportparentviewmodel) interface that exposes a parent view model to its child view models. This interface is implemented automatically in all [`ViewModelBase`](https://docs.devexpress.com/WPF/17351/mvvm-framework/viewmodels/viewmodelbase) descendants.  
 
 ## Implementation Details
 
