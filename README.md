@@ -11,14 +11,14 @@ This example uses the [`ISupportParentViewModel`](https://docs.devexpress.com/WP
 
 ## Implementation Details
 
-Use the `ViewModelExtensions.ParentViewModel` attached property to associate a parent view model with a child view model. This property is typically applied in XAML to enable the MVVM framework to propagate services and context from a parent view model to its child:
+Use the `ViewModelExtensions.ParentViewModel` attached property to associate a child view model with a parent view model. In XAML, specify the `ParentViewModel` property for the child view as follows so it can access services and data from the parent view model:
 
 ```xaml
 <local:ChildView 
     dxmvvm:ViewModelExtensions.ParentViewModel="{Binding DataContext, ElementName=LayoutRoot}"/>
 ```
 
-> Note: The `ViewModelExtensions.ParentViewModel` attached property is set **after** the child view is initialized. It is not available in the view model constructor.
+> Note: The `ViewModelExtensions.ParentViewModel` attached property is set **after** the child view is initialized because the property is not available in a child view constructor.
 
 The [`ISupportParentViewModel`](https://docs.devexpress.com/WPF/17449/mvvm-framework/viewmodels/viewmodel-relationships-isupportparentviewmodel) interface allows a child view model to access MVVM services defined at the parent level:
 
@@ -28,7 +28,7 @@ IMessageBoxService MessageBoxService {
 }
 ```
 
-In `ViewModelBase` descendants, override the `OnParentViewModelChanged` method to raise property change notifications for `ParentViewModel`:
+Override the `OnParentViewModelChanged` method in a `ViewModelBase` descendant only if your child view model implementation includes custom parent view model changes.
 
 ```cs
 protected override void OnParentViewModelChanged(object parentViewModel) {
